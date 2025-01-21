@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>School Management System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+ <!-- js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!--webfonts-->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//webfonts--> 
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- chart -->
+<script src="js/Chart.js"></script>
+<!-- //chart -->
+<!--Calender-->
+<link rel="stylesheet" href="css/clndr.css" type="text/css" />
+<script src="js/underscore-min.js" type="text/javascript"></script>
+<script src= "js/moment-2.2.1.js" type="text/javascript"></script>
+<script src="js/clndr.js" type="text/javascript"></script>
+<script src="js/site.js" type="text/javascript"></script>
+<!--End Calender-->
+<!-- Metis Menu -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet">
+<!--//Metis Menu -->
+</head> 
+<body class="cbp-spmenu-push">
+	<div class="main-content">
+		<!--left-fixed -navigation-->
+		<div class=" sidebar" role="navigation">
+            <div class="navbar-collapse">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+					<ul class="nav" id="side-menu">
+						<li>
+							<a href="index.html" class="active"><i class="fa fa-home nav_icon"></i>Dashboard</a>
+						</li>
+
+						<li class="">
+							<a href="attendence.html"><i class="fa fa-book nav_icon"></i> Child's attendance <span class="fa arrow"></span></a>
+						</li>
+
+						<li class="">
+							<a href="grades.html"><i class="fa fa-book nav_icon"></i> Grades <span class="fa arrow"></span></a>
+						</li>
+
+						<li class="">
+							<a href="upcoming_events.html"><i class="fa fa-book nav_icon"></i> Upcoming events. <span class="fa arrow"></span></a>
+						</li>
+
+
+						<li class="">
+							<a href="teachers_msg.html"><i class="fa fa-book nav_icon"></i> Messages from teachers / Send Messages to Teachers <span class="fa arrow"></span></a>
+						</li>
+
+						<li class="">
+							<a href="#"><i class="fa fa-book nav_icon"></i> View Fee Statements / Pay Fees Online. <span class="fa arrow"></span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="sticky-header header-section">
+			<div class="header-left">
+				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+				<div class="logo">
+					<a href="index.html">
+						<h1>School Management System </h1>
+						<span>Student Enrollment Trends</span>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header-right">
+				<div class="profile_details_left">
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>				
+			</div>
+			<div class="clearfix"> </div>	
+		</div>
+
+        
+		<!-- main content start-->
+		<div id="page-wrapper">
+            <div class="main-page">
+                <h3 class="title1">Messages</h3> 
+                <div class="inbox-page">
+                    <h4>Today</h4>
+                    <div class="inbox-row widget-shadow" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="mail "> <input type="checkbox" class="checkbox"> </div>
+                        <div class="mail"><img src="images/avatar.png" alt="Teacher Image"/></div> 
+                        <div class="mail mail-name"><h6>Mr./Ms. [Teacher Name 1]</h6></div> 
+                        <div class="mail">
+                            <p>[Subject of Message 1]</p> 
+                        </div>
+                        <div class="mail-right">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
+                                </a>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fa fa-reply mail-icon"></i> Reply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <i class="fa fa-download mail-icon"></i> Archive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-red" title="">
+                                            <i class="fa fa-trash-o mail-icon"></i> Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="mail-right"><p>[Date and Time of Message 1]</p></div>
+                        <div class="clearfix"> </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="mail-body">
+                                <p>[Full content of Message 1]</p>
+                                <form>
+                                    <textarea placeholder="Type your reply here"></textarea> 
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inbox-page row">
+                    <h4>Yesterday Messages</h4>
+                    <div class="inbox-row widget-shadow" id="accordion2" role="tablist" aria-multiselectable="true"> 
+                        <div class="mail "> <input type="checkbox" class="checkbox"> </div>
+                        <div class="mail"><img src="images/avatar.png" alt="Teacher Image"/></div> 
+                        <div class="mail mail-name"><h6>Mr./Ms. [Teacher Name 2]</h6></div> 
+                        <div class="mail">
+                            <p>[Subject of Message 2]</p> 
+                        </div>
+                        <div class="mail-right">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
+                                </a>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <i class="fa fa-reply mail-icon"></i> Reply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <i class="fa fa-download mail-icon"></i> Archive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-red" title="">
+                                            <i class="fa fa-trash-o mail-icon"></i> Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="mail-right"><p>[Date and Time of Message 2]</p></div>
+                        <div class="clearfix"> </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="mail-body">
+                                <p>[Full content of Message 2]</p>
+                                <form>
+                                    <textarea placeholder="Type your reply here"></textarea> 
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inbox-page row">
+                    <h4>Older Messages</h4>
+                    <div class="inbox-row widget-shadow" id="accordion3" role="tablist" aria-multiselectable="true"> 
+                        <div class="mail "> <input type="checkbox" class="checkbox"> </div>
+                        <div class="mail"><img src="images/avatar.png" alt="Teacher Image"/></div> 
+                        <div class="mail mail-name"><h6>Mr./Ms. [Teacher Name 3]</h6></div> 
+                        <div class="mail">
+                            <p>[Subject of Message 3]</p> 
+                        </div>
+                        <div class="mail-right">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
+                                </a>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            <i class="fa fa-reply mail-icon"></i> Reply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <i class="fa fa-download mail-icon"></i> Archive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-red" title="">
+                                            <i class="fa fa-trash-o mail-icon"></i> Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="mail-right"><p>[Date and Time of Message 3]</p></div>
+                        <div class="clearfix"> </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="mail-body">
+                                <p>[Full content of Message 3]</p>
+                                <form>
+                                    <textarea placeholder="Type your reply here"></textarea> 
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-wrapper">
+            <div class="main-page">
+                <h3 class="title1">Messages</h3> 
+                <div class="inbox-page">
+                    <h4>Today</h4>
+                    <div class="inbox-row widget-shadow" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="mail "> <input type="checkbox" class="checkbox"> </div>
+                        <div class="mail"><img src="images/avatar.png" width="20px" alt="Teacher Image"/></div> 
+                        <div class="mail mail-name"><h6>Mr./Ms. [Teacher Name 1]</h6></div> 
+                        <div class="mail">
+                            <p>[Subject of Message 1]</p> 
+                        </div>
+                        <div class="mail-right">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
+                                </a>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fa fa-reply mail-icon"></i> Reply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <i class="fa fa-download mail-icon"></i> Archive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-red" title="">
+                                            <i class="fa fa-trash-o mail-icon"></i> Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="mail-right"><p>[Date and Time of Message 1]</p></div>
+                        <div class="clearfix"> </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="mail-body">
+                                <p>[Full content of Message 1]</p>
+                                <form>
+                                    <textarea placeholder="Type your reply here"></textarea> 
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inbox-page row">
+                    <h4>Yesterday Messages</h4>
+                    <div class="inbox-row widget-shadow" id="accordion2" role="tablist" aria-multiselectable="true"> 
+                        <div class="mail "> <input type="checkbox" class="checkbox"> </div>
+                        <div class="mail"><img src="images/avatar.png" alt="Teacher Image"/></div> 
+                        <div class="mail mail-name"><h6>Mr./Ms. [Teacher Name 2]</h6></div> 
+                        <div class="mail">
+                            <p>[Subject of Message 2]</p> 
+                        </div>
+                        <div class="mail-right">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
+                                </a>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <i class="fa fa-reply mail-icon"></i> Reply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <i class="fa fa-download mail-icon"></i> Archive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-red" title="">
+                                            <i class="fa fa-trash-o mail-icon"></i> Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="mail-right"><p>[Date and Time of Message 2]</p></div>
+                        <div class="clearfix"> </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="mail-body">
+                                <p>[Full content of Message 2]</p>
+                                <form>
+                                    <textarea placeholder="Type your reply here"></textarea> 
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inbox-page row">
+                    <h4>Older Messages</h4>
+                    <div class="inbox-row widget-shadow" id="accordion3" role="tablist" aria-multiselectable="true"> 
+                        <div class="mail "> <input type="checkbox" class="checkbox"> </div>
+                        <div class="mail"><img src="images/avatar.png" alt="Teacher Image"/></div> 
+                        <div class="mail mail-name"><h6>Mr./Ms. [Teacher Name 3]</h6></div> 
+                        <div class="mail">
+                            <p>[Subject of Message 3]</p> 
+                        </div>
+                        <div class="mail-right">
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <p><i class="fa fa-ellipsis-v mail-icon"></i></p>
+                                </a>
+                                <ul class="dropdown-menu float-right">
+                                    <li>
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            <i class="fa fa-reply mail-icon"></i> Reply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <i class="fa fa-download mail-icon"></i> Archive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-red" title="">
+                                            <i class="fa fa-trash-o mail-icon"></i> Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="mail-right"><p>[Date and Time of Message 3]</p></div>
+                        <div class="clearfix"> </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="mail-body">
+                                <p>[Full content of Message 3]</p>
+                                <form>
+                                    <textarea placeholder="Type your reply here"></textarea> 
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+		<!--footer-->
+		<div class="footer">
+		   <p>&copy; 2016 Novus Admin Panel. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+		</div>
+        <!--//footer-->
+	</div>
+	<!-- Classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+				
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+	<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+   <script src="js/bootstrap.js"> </script>
+</body>
+</html>
