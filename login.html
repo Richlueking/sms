@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Novus Admin Panel an Admin Panel Category Flat Bootstrap Responsive Website Template | Login Page :: w3layouts</title>
+<title>NVTI School Management System</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Novus Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -48,16 +48,87 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<h4> <br> Dont haav an account? <a href="signup.html">  Sign Up »</a> </h4>
 					</div>
 					<div class="login-body">
-						<form action="system_administration_dashboard.html" method="">
-							<input type="text" class="user" name="email" placeholder="Enter your email" required="">
-							<input type="password" name="password" class="lock" placeholder="password">
-							<a href="system_administration_dashboard.html" type="submit" name="">Sign In</a>
-							<div class="forgot-grid">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked="" class="btn btn-primary"><i></i>Remember me</label>
-								<div class="forgot">
-									<a href="#">forgot password?</a>
+						<form action="student_dashboard.html" method="post">
+							<!-- Basic Information -->
+							<div class="form-group">
+								<input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" name="password" placeholder="Password" required>
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+							</div>
+							<div class="form-group">
+								<input type="date" class="form-control" name="dob" placeholder="Date of Birth" required>
+							</div>
+						
+							<!-- Gender Selection -->
+							<div class="form-group">
+								<label>Gender:</label>
+								<div>
+									<label><input type="radio" name="gender" value="male" required> Male</label>
+									<label><input type="radio" name="gender" value="female" required> Female</label>
+									<label><input type="radio" name="gender" value="other" required> Other</label>
 								</div>
-								<div class="clearfix"> </div>
+							</div>
+						
+							<!-- Address -->
+							<div class="form-group">
+								<input type="text" class="form-control" name="address" placeholder="Address" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="city" placeholder="City" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="state" placeholder="State" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="zip_code" placeholder="Zip Code" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" name="country" placeholder="Country" required>
+							</div>
+						
+							<!-- Course Selection -->
+							<div class="form-group">
+								<label>Select Course:</label>
+								<select name="course" class="form-control" required>
+									<option value="">Choose a course</option>
+									<option value="computer_science">Computer Science</option>
+									<option value="business_administration">Business Administration</option>
+									<option value="engineering">Engineering</option>
+									<option value="medicine">Medicine</option>
+									<option value="law">Law</option>
+								</select>
+							</div>
+						
+							<!-- Terms and Conditions -->
+							<div class="form-group">
+								<label>
+									<input type="checkbox" name="terms" required> I agree to the terms and conditions
+								</label>
+							</div>
+						
+							<!-- Submit Button -->
+								<a href="student_dashboard.html" type="submit" class="btn btn-primary">Sign Up</a>
+							
+						
+							<!-- Forgot Password and Remember Me -->
+							<div class="forgot-grid">
+								<label class="checkbox">
+									<input type="checkbox" name="remember_me"> Remember me
+								</label>
+								<div class="forgot">
+									<a href="#">Forgot password?</a>
+								</div>
+								<div class="clearfix"></div>
 							</div>
 						</form>
 					</div>
